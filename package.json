@@ -12,15 +12,15 @@
   },
   "dependencies": {
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-snapshot": "^1.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && react-snapshot",
     "lint": "prettier-eslint --write \"src/**/*.js\" \"scripts/**/*.js\" --prettier.single-quote --prettier.trailing-comma es5",
-    "predeploy": "yarn build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "flow": "flow"
-  },
-  "homepage": "https://arosh.github.io/naist-bus-schedule/"
+  }
 }
