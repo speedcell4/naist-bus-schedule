@@ -8,7 +8,8 @@
     "mz": "^2.6.0",
     "prettier-eslint-cli": "^3.4.3",
     "react-scripts": "0.9.5",
-    "string.prototype.padstart": "^3.0.0"
+    "string.prototype.padstart": "^3.0.0",
+    "@kadira/storybook": "^2.21.0"
   },
   "dependencies": {
     "react": "^15.5.4",
@@ -20,7 +21,9 @@
     "lint": "prettier-eslint --write \"src/**/*.js\" \"scripts/**/*.js\" --prettier.single-quote --prettier.trailing-comma es5",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
-    "flow": "flow"
+    "flow": "flow",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "homepage": "https://arosh.github.io/naist-bus-schedule/"
 }
